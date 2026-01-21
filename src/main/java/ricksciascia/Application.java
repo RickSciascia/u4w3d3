@@ -32,6 +32,10 @@ public class Application {
             Evento pupoSSiro = new Evento("Pupo a S.Siro", LocalDate.of(2026, 1, 28),"Incredibile di nuovo PUPO a S.Siro", TipoEvento.PUBBLICO,50000,sSiroFromDB);
             Evento vascoSSiro = new Evento("Vasco Rossi a S.Siro", LocalDate.of(2026, 2, 28),"Vasco Rossi a S.Siro", TipoEvento.PUBBLICO,50000,sSiroFromDB);
 
+            ed.saveEvento(pupoARoma);
+            ed.saveEvento(pupoSSiro);
+            ed.saveEvento(vascoSSiro);
+
             System.out.println(pupoARoma);
             System.out.println(pupoARoma.getLocationEvento());
             System.out.println(pupoSSiro);
